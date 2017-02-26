@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_my_talking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_action_bar_user_detail_layout"/>
+    <LinearLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/show_net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/net_error_layout"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/show_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/show_number_my"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:textColor="@color/Orange_f60"
+            android:text=""/>
+        <ListView
+            android:id="@+id/show_talking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/show_null"
+            android:textColor="#f55"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="~ ╮(╯▽╰)╭ ~\n\n空空如也哎"/>
+    </LinearLayout>
+
+
+</LinearLayout>

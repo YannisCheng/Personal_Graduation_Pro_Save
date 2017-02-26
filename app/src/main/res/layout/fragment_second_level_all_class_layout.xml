@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_dividers_12"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/totle_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/card_margin"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Blue_09c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/totle_all_m"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Blue_09c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/totle_all_w"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/Blue_09c"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/page_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/text_btn_selected_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.andview.refreshview.XRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:background="#fff"
+        android:orientation="vertical"
+        xrefreshview:isHeightMatchParent="true"
+        xrefreshview:isWidthMatchParent="true">
+
+        <ListView
+            android:id="@+id/all_class_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_text_100" />
+    </com.andview.refreshview.XRefreshView>
+
+    <RelativeLayout
+        android:layout_marginTop="41dp"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"
+        android:clickable="false"
+        android:focusable="false"
+        android:background="@color/white_dividers_12"
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_marginTop="255dp"
+            android:background="@color/white_dividers_12"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="选择页码"
+            android:textColor="@color/Orange_f60"
+            android:textSize="16sp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/tv"
+            android:id="@+id/one"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_dividers_12"/>
+        <GridView
+            android:verticalSpacing="@dimen/card_margin"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:paddingTop="@dimen/card_margin"
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/white_dividers_12"
+            android:gravity="center"
+            android:numColumns="5"
+            android:paddingLeft="@dimen/card_margin"
+            android:paddingRight="@dimen/card_margin"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

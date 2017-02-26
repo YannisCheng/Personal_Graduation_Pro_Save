@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="4dp"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_student_2_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_hint_text_30"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="现居地:"
+            android:textColor="@color/Blue_09c"
+            android:textSize="16sp" />
+
+        <EditText
+            android:background="@color/white_hint_text_30"
+            android:id="@+id/address_now_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="工作:"
+            android:textColor="@color/Blue_09c"
+            android:textSize="16sp" />
+
+        <EditText
+            android:background="@color/white_hint_text_30"
+
+            android:id="@+id/job_now_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="联系方式:"
+            android:textColor="@color/Blue_09c"
+            android:textSize="16sp" />
+
+        <EditText
+            android:background="@color/white_hint_text_30"
+            android:id="@+id/connect_now_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="其他:"
+            android:textColor="@color/Blue_09c"
+            android:textSize="16sp" />
+
+        <EditText
+            android:background="@color/white_hint_text_30"
+            android:id="@+id/other_now_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

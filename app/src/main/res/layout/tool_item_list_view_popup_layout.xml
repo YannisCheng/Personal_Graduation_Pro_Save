@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_popup"
+        android:paddingLeft="@dimen/activity_edge"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_btn_serach_selected"
+        android:text="listView—————listView"
+        android:textSize="@dimen/small_title_text"
+        android:textColor="@color/text_btn_selected_popup"/>
+</LinearLayout>

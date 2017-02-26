@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_student_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_dividers_12"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="现居地:"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/address_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:text="未填写"
+            android:textColor="@color/black_secondary_text_54"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="工作:"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/job_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:text="未填写"
+            android:textColor="@color/black_secondary_text_54"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="联系方式:"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/connect_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:text="未填写"
+            android:textColor="@color/black_secondary_text_54"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="其他:"
+            android:textColor="@color/black_secondary_text_54"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/other_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical"
+            android:text="未填写"
+            android:textColor="@color/black_secondary_text_54"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

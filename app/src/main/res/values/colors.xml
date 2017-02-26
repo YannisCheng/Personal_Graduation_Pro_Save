@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--black-->
+    <color name="black_dividers_12">#D8D8D8</color>
+
+    <color name="black_hint_text_26">#b6b6b6</color>
+
+    <color name="black_secondary_text_54">#717171</color>
+
+    <color name="black_text_87">#202020</color>
+
+    <color name="black_100">#000000</color>
+
+    <!--white-->
+    <color name="white_aaa">#aaa</color>
+
+    <color name="white_ccc">#ccc</color>
+
+    <color name="white_eee">#eee</color>
+
+    <color name="white_dividers_12">#f7f7f7</color>
+
+    <color name="white_hint_text_30">#f9f9f9</color>
+
+    <color name="white_secondary_text_70">#fcfcfc</color>
+
+    <color name="white_text_100">#ffffff</color>
+
+
+    <color name="wangyired">#c72b2c</color>
+
+    <!-- Blue Color-->
+    <color name="Blue_09c">#0099cc</color>
+    <color name="Blue_069">#006699</color>
+    <color name="Blue_036">#003366</color>
+    <color name="Blue_099">#009999</color>
+    <color name="Blue_39c">#3399cc</color>
+    <color name="Blue_369">#336699</color>
+    <color name="Blue_336">#333366</color>
+    <color name="Blue_6cc">#66cccc</color>
+    <color name="Blue_669">#666699</color>
+    <color name="Blue_two">#014080</color>
+    <color name="Blue_194d5b">#194d5b</color>
+    <color name="Blue_24403c">#24403c</color>
+
+
+    <!-- Orange Color-->
+    <color name="Orange_f60">#ff5500</color>
+    <color name="Orange_f93">#ff9933</color>
+    <color name="Orange_f90">#ff9900</color>
+    <color name="Orange_fc3">#ffcc33</color>
+    <color name="Orange_fc0">#ffcc00</color>
+    <color name="Orange_ff9">#ffff99</color>
+
+</resources>

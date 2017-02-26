@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_user_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/tool_action_bar_layout"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <TextView
+                android:onClick="getEvent"
+                android:id="@+id/basic_info"
+                android:background="@drawable/bg_my_fragment_selector"
+                android:drawableLeft="@mipmap/detail_user_info"
+                android:drawablePadding="@dimen/activity_edge"
+                android:paddingLeft="@dimen/activity_edge"
+                android:clickable="true"
+                android:text="基本信息"
+                android:textColor="@color/Orange_f60"
+                android:textSize="@dimen/small_title_text"
+                android:gravity="left|center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+            <include layout="@layout/tool_student_info_layout"/>
+
+
+        <LinearLayout
+            android:clickable="true"
+            android:background="@drawable/bg_my_fragment_selector"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="left"
+                android:drawableLeft="@mipmap/talking_user_info1"
+                android:drawablePadding="@dimen/activity_edge"
+                android:paddingLeft="@dimen/activity_edge"
+                android:clickable="true"
+                android:text="留言板"
+                android:textColor="@color/Orange_f60"
+                android:textSize="@dimen/small_title_text"
+                android:gravity="left|center"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView3" />
+            <TextView
+                android:layout_gravity="left"
+                android:text="(0条)"
+                android:textColor="@color/Orange_f60"
+                android:textSize="@dimen/small_title_text"
+                android:gravity="left|center"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:id="@+id/show_number" />
+
+            <Button
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/give_up_btn"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/cancel_detail_btn_back"
+                />
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:visibility="gone"
+                android:id="@+id/send_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/send_btn_back"
+                />
+
+            <Button
+                android:layout_marginLeft="24dp"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:onClick="getEvent"
+                android:layout_marginRight="@dimen/activity_edge"
+                android:id="@+id/edit_btn_talk"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/edit_btn_back"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/layout_send"
+            android:background="@color/black_dividers_12"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/send_msg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/activity_edge"
+                android:paddingRight="@dimen/activity_edge"
+                android:minLines="1"
+                android:layout_marginLeft="@dimen/activity_edge"
+                android:layout_marginRight="@dimen/activity_edge"
+                android:layout_marginTop="@dimen/card_margin"
+                android:background="@drawable/edit_bg_shork"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:layout_marginTop="@dimen/activity_edge"
+                android:layout_marginRight="32dp"
+                android:layout_alignParentRight="true"
+                android:onClick="getEvent"
+                android:visibility="invisible"
+                android:id="@+id/cancel_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/edit_cancel_btn_back"
+                />
+        </RelativeLayout>
+
+        <ListView
+            android:background="@color/white_dividers_12"
+            android:id="@+id/other_student_talking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:background="@color/white_dividers_12"
+            android:visibility="gone"
+            android:id="@+id/show_null"
+            android:gravity="center"
+            android:textColor="#f55"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="~ ╮(╯▽╰)╭ ~\n\n空空如也哎"/>
+        <TextView
+            android:clickable="true"
+            android:background="@color/white_dividers_12"
+            android:visibility="gone"
+            android:id="@+id/show_net_error_stu_info"
+            android:gravity="center"
+            android:textColor="#f55"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(⊙o⊙)  \n\n与服务器连接异常，无法获取数据"/>
+    </LinearLayout>
+
+
+</LinearLayout>

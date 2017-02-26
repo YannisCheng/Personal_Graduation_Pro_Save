@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/item_single_info_setting"
+        android:background="@drawable/bg_my_fragment_selector"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_large"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:layout_width="@dimen/user_head"
+            android:layout_height="@dimen/user_head"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@mipmap/user_head_default"
+                android:id="@+id/item_user_head_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_head">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                    <TextView
+                        android:layout_marginLeft="@dimen/activity_edge"
+                        android:id="@+id/list_view_item_user_name_setting"
+                        android:textSize="@dimen/small_title_text"
+                        android:textColor="@color/black_text_87"
+                        android:gravity="left|center_vertical"
+                        android:layout_width="@dimen/user_head"
+                        android:layout_height="match_parent"
+                        android:text="风轻云淡"/>
+
+                    <TextView
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/list_view_item_user_sex_setting"
+                        android:textSize="@dimen/small_title_text"
+                        android:textColor="@color/black_text_87"
+                        android:gravity="left|center_vertical"
+                        android:layout_width="@dimen/activity_edge"
+                        android:layout_height="match_parent"
+                        android:text="男"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/activity_edge"
+                        android:id="@+id/list_view_item_user_category_setting"
+                        android:textSize="@dimen/small_title_text"
+                        android:textColor="@color/black_text_87"
+                        android:gravity="left|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="理科"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/activity_edge"
+                        android:id="@+id/list_view_item_user_teach_setting"
+                        android:textSize="@dimen/normal_text"
+                        android:textColor="@color/black_hint_text_26"
+                        android:gravity="left|center_vertical"
+                        android:layout_width="@dimen/user_head"
+                        android:layout_height="match_parent"
+                        android:text="教学 班"/>
+
+                    <TextView
+                        android:id="@+id/list_view_item_user_class_admin_setting"
+                        android:layout_marginLeft="32dp"
+                        android:textSize="@dimen/small_title_text"
+                        android:textColor="@color/Orange_f60"
+                        android:gravity="left|center_vertical"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="行政 11 班"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/activity_edge"
+                    android:id="@+id/list_view_item_user_talking_setting"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_text_87"
+                    android:gravity="left|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="你辣么牛逼，怎么不去抓羊呢?"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:background="@color/white_dividers_12"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:paddingLeft="@dimen/activity_edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="46dp"
+            android:layout_height="56dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/show_student_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="中山门"
+                    android:gravity="center"
+                    android:textColor="@color/black_text_87"
+                    android:id="@+id/show_student_name"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:text="行政 11 班"
+                    android:gravity="center"
+                    android:textColor="@color/Orange_f60"
+                    android:id="@+id/show_student_class"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_marginLeft="@dimen/activity_edge"
+                    android:text="2006-12-12 12:12"
+                    android:gravity="center"
+                    android:textColor="@color/black_secondary_text_54"
+                    android:id="@+id/show_student_date"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingRight="@dimen/activity_edge"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="爸爸八点半阿爸爸阿爸爸发否啊阿发啊打发打发啊打发打发发"
+                    android:textColor="@color/black_text_87"
+                    android:layout_marginLeft="@dimen/activity_edge"
+                    android:gravity="left|center"
+                    android:id="@+id/show_student_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

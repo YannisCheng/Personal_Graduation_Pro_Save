@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_edge"
+        android:id="@+id/show_net_server"
+        android:textColor="@color/Orange_f60"
+        android:text="无法连接至服务器！"
+        android:paddingRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableLeft="@mipmap/tuichu_one"
+        android:background="@color/white_dividers_12"/>
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_edge"
+        android:id="@+id/show_net"
+        android:textColor="@color/Orange_f60"
+        android:text="网络异常！"
+        android:paddingRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableLeft="@mipmap/tuichu_one"
+        android:background="@color/white_dividers_12"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginBottom="@dimen/appBar_size"
+        android:id="@+id/view_pager_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/activity_bar_bottom_layout"/>
+
+</RelativeLayout>

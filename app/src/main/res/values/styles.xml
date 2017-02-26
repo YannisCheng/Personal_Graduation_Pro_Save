@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/Blue_09c</item>
+        <item name="colorPrimaryDark">@color/Blue_09c</item>
+        <item name="colorAccent">@color/black_100</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Splash 全屏显示样式-->
+    <style name="AppTheme.Fullscreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- dialog样式 -->
+    <style name="dialog_activity" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RBStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_btn_bar</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+
+    <style name="admin_class_layout_bg">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_my_fragment_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="line_admin_class">
+        <item name="android:alpha">0.3</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/Blue_09c</item>
+    </style>
+
+    <style name="line_admin_class2">
+        <item name="android:alpha">0.3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/Blue_09c</item>
+    </style>
+
+    <style name="admin_class_text">
+
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/small_title_text</item>
+        <item name="android:textColor">@color/text_btn_selected_sec</item>
+    </style>
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/tool_action_bar_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/appBar_size">
+
+    <RelativeLayout
+        android:background="@color/Blue_09c"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appBar_size">
+        <Button
+            android:onClick="getEvent"
+            android:layout_marginTop="@dimen/activity_edge"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:id="@+id/back_action_bar"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:background="@drawable/back_btn"
+            />
+
+        <!-- 没有指定圆形ImageView属性时，默认没有外边圆颜色 -->
+        <!-- 需要将图片资源自定为src ，或在程序中setImageResource(res) 不能设置background为图片，这样不能达到圆形效果-->
+        <com.yannischeng.util.RoundImageView
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:id="@+id/back_action_bar_user_head"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/user_head_default"
+            />
+        <LinearLayout
+            android:paddingRight="@dimen/card_margin"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/appBar_size"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/activity_edge"
+                android:gravity="center"
+                android:id="@+id/action_title"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="关注"
+                android:textColor="@color/white_text_100"
+                android:textSize="@dimen/appBar_title_text"/>
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/radio_group"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="40dp">
+                <RadioButton android:background="@drawable/actoinbar_fragment_two_one"
+                    android:id="@+id/one_group"
+                    android:layout_gravity="center"
+                    android:text="行政班"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_btn_bw_t"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_ccc"/>
+                <RadioButton
+                    android:background="@drawable/actoinbar_fragment_two_two"
+                    android:id="@+id/two_group"
+                    android:layout_gravity="center"
+                    android:text="全年级"
+                    android:textSize="@dimen/small_title_text"
+                    android:textColor="@color/text_btn_bw_t"
+                    android:button="@null"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_alignParentRight="true"
+            android:id="@+id/quickly_search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/search_btn"
+            />
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_alignParentRight="true"
+            android:id="@+id/more_btn_admin"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/more_btn"
+            />
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_alignParentRight="true"
+            android:id="@+id/more_btn_all"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/more_btn"
+            />
+        <Button
+            android:onClick="getEvent"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_alignParentRight="true"
+            android:id="@+id/edit_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/edit_btn"
+            />
+
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_alignParentRight="true"
+            android:id="@+id/add_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/add_circle_btn"
+            />
+    </RelativeLayout>
+</LinearLayout>

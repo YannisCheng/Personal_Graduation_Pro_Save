@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yannischeng">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.yannischeng.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_one"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.yannischeng.activity.SplashActivity"
+            android:theme="@style/AppTheme.Fullscreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yannischeng.activity.MainActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="locked"/>
+        <activity android:name="com.yannischeng.activity.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked"/>
+        <activity android:name="com.yannischeng.activity.SearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked"/>
+        <activity android:name="com.yannischeng.activity.StuInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked"/>
+        <activity android:name="com.yannischeng.activity.UserDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked"/>
+        <activity
+            android:name="com.yannischeng.activity.GuideActivity"
+            android:theme="@style/AppTheme.Fullscreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked"/>
+
+        <activity android:name="com.yannischeng.activity.MyTalkingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked"/>
+        <activity android:name="com.yannischeng.activity.AboutDeveloperActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="locked"/>
+    </application>
+
+</manifest>

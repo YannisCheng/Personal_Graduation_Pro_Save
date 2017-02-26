@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/tool_action_bar_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appBar_size"
+        app:elevation="@dimen/card_margin"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/appBar_size">
+            <Button
+                android:onClick="getEvent"
+                android:layout_marginTop="@dimen/activity_edge"
+                android:layout_marginLeft="@dimen/activity_edge"
+                android:id="@+id/back_action_bar"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:background="@drawable/back_btn"
+                />
+
+            <LinearLayout
+                android:paddingRight="@dimen/card_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/appBar_size"
+                android:orientation="horizontal"
+                android:background="@color/Blue_09c">
+
+                <TextView
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/activity_edge"
+                    android:gravity="center"
+                    android:id="@+id/action_title"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="个人详情"
+                    android:textColor="@color/white_text_100"
+                    android:textSize="@dimen/appBar_title_text"/>
+
+            </LinearLayout>
+
+            <Button
+                android:onClick="getEvent"
+                android:visibility="gone"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="@dimen/activity_edge"
+                android:layout_alignParentRight="true"
+                android:id="@+id/detail_save"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/save_btn"
+                />
+
+            <Button
+                android:onClick="getEvent"
+                android:visibility="visible"
+                android:layout_marginTop="19dp"
+                android:layout_marginRight="@dimen/activity_edge"
+                android:layout_alignParentRight="true"
+                android:id="@+id/edit_detail_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/edit_btn"
+                />
+
+            <Button
+                android:onClick="getEvent"
+                android:visibility="gone"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="64dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cancel__detail_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/cancel_detail_btn"
+                />
+            <Button
+                android:onClick="getEvent"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/activity_edge"
+                android:layout_alignParentRight="true"
+                android:id="@+id/send_btn"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/send_btn"
+                />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+</LinearLayout>

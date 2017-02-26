@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white_dividers_12"
+    android:id="@+id/info_student"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/det_pic"
+            android:layout_width="76dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/user_head_default"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginBottom="4dp"
+                    android:gravity="bottom"
+                    android:id="@+id/det_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textIsSelectable="true"
+                    android:textColor="#111"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center|top"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginRight="@dimen/card_margin"
+                    android:id="@+id/det_sex"
+                    android:layout_marginLeft="@dimen/activity_edge"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:layout_marginRight="@dimen/activity_edge"
+                    android:id="@+id/set_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textIsSelectable="true"
+                    android:textColor="@color/Orange_f60"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 此部分暂时注掉 -->
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white_dividers_12">
+
+        <TextView
+            android:drawableLeft="@mipmap/detail_user_info"
+            android:drawablePadding="@dimen/activity_edge"
+            android:paddingLeft="@dimen/activity_edge"
+            android:clickable="true"
+            android:text="个人资料"
+            android:textColor="@color/Orange_f60"
+            android:textSize="@dimen/small_title_text"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <LinearLayout
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Blue_09c"/>
+        <TextView
+            android:drawableLeft="@mipmap/talking_user_info1"
+            android:drawablePadding="@dimen/activity_edge"
+            android:paddingLeft="@dimen/activity_edge"
+            android:clickable="true"
+            android:text="更多信息"
+            android:textColor="@color/Orange_f60"
+            android:textSize="@dimen/small_title_text"
+            android:gravity="left|center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/show_basic_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#eee">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:text="民族:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black_secondary_text_54"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/det_nation"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black_text_87"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="63dp"
+                    android:gravity="center_vertical"
+                    android:text="出生日期:"
+                    android:textColor="@color/black_secondary_text_54"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/det_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textIsSelectable="true"
+                    android:textColor="@color/black_text_87"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp"
+            android:background="#eee">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="身高:"
+                    android:textColor="@color/black_secondary_text_54"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/det_height"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black_text_87"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="44dp"
+                    android:gravity="center_vertical"
+                    android:text="体        重:"
+                    android:textColor="@color/black_secondary_text_54"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/det_weight"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black_text_87"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#eee">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="籍贯:"
+                    android:textColor="@color/black_secondary_text_54"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/det_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textIsSelectable="true"
+                    android:textColor="@color/black_text_87"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="学号:"
+                    android:textColor="@color/black_secondary_text_54"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:id="@+id/det_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/black_text_87"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#eee">
+
+            </LinearLayout>
+           <include layout="@layout/tool_student_info_two_layout"/>
+            <include layout="@layout/tool_student_info_two_edit_layout"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

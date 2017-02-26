@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+
+        android:background="@color/white_dividers_12"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appBar_size">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Blue_09c">
+
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:background="@color/white_dividers_12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/one"
+                android:drawableTop="@drawable/main_selector"
+                android:text="关注"
+                style="@style/RBStyle" />
+            <RadioButton
+                android:id="@+id/two"
+                android:drawableTop="@drawable/class_selector"
+                android:text="校友录"
+                style="@style/RBStyle" />
+            <RadioButton
+                android:drawableTop="@drawable/person_selector"
+                android:id="@+id/three"
+                android:text="我"
+                style="@style/RBStyle"
+                android:layout_height="match_parent" />
+
+        </RadioGroup>
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>

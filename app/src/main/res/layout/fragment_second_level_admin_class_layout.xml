@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:background="@color/white_dividers_12"
+        android:visibility="gone"
+        android:id="@+id/single_class_show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/show_class"
+            android:gravity="center"
+            android:text="行政8班"
+            android:textSize="18sp"
+            android:textColor="@color/Orange_f60"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            style="@style/line_admin_class"/>
+        <TextView
+            android:id="@+id/show_all_number"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:textSize="14sp"
+            android:textColor="@color/Blue_09c"
+            android:layout_weight="1.7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/show_m_number"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:textSize="14sp"
+            android:textColor="@color/Blue_09c"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/show_w_number"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:textSize="14sp"
+            android:textColor="@color/Blue_09c"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
+            style="@style/line_admin_class"/>
+        <LinearLayout
+            android:gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:clickable="true"
+                android:background="@drawable/admin_back_pressed"
+                android:id="@+id/show_class_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:gravity="right|center"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:clickable="true"
+                android:background="@drawable/class_info_pressed"
+                android:id="@+id/show_class_setting"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.andview.refreshview.XRefreshView
+        android:visibility="gone"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_view_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        xrefreshview:isHeightMatchParent="true"
+        xrefreshview:isWidthMatchParent="true" >
+        <ListView
+            android:background="@color/white_text_100"
+            android:id="@+id/list_view_admin_class"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.andview.refreshview.XRefreshView>
+
+    <!-- 暂时关闭-->
+    <LinearLayout
+        android:visibility="visible"
+        android:paddingLeft="@dimen/activity_edge"
+        android:paddingRight="@dimen/activity_edge"
+        android:gravity="center"
+        android:background="@color/white_text_100"
+        android:id="@+id/class_show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/one_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政 1 班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/two_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政 2 班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/three_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政 3 班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/line_admin_class2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/four_class_layout"
+                style="@style/admin_class_layout_bg">
+
+                <TextView
+                    android:text="行政 4 班"
+                    style="@style/admin_class_text"
+                    android:id="@+id/textView2" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/five_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政 5 班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/six_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政 6 班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/line_admin_class2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/seven_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政 7 班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/eight_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政 8 班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/nine_class_layout"
+                style="@style/admin_class_layout_bg">
+
+                <TextView
+                    android:text="行政 9 班"
+                    style="@style/admin_class_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/line_admin_class2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ten_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政10班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/eleven_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政11班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/line_admin_class"/>
+            <LinearLayout
+                android:id="@+id/twelve_class_layout"
+                style="@style/admin_class_layout_bg">
+                <TextView
+                    android:text="行政12班"
+                    style="@style/admin_class_text"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

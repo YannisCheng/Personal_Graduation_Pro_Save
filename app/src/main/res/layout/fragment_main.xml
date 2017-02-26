@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_action_bar_layout"/>
+
+    <LinearLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/show_net_error_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <include layout="@layout/net_error_layout"/>
+    </LinearLayout>
+    <TextView
+        android:background="@color/white_text_100"
+        android:visibility="gone"
+        android:id="@+id/show_null"
+        android:gravity="center"
+        android:textColor="#f55"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="~ ╮(╯▽╰)╭ ~\n\n空空如也哎"/>
+    <com.andview.refreshview.XRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_view_friend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xrefreshview:isHeightMatchParent="true"
+        xrefreshview:isWidthMatchParent="true" >
+        <ListView
+            android:background="@color/white_text_100"
+            android:visibility="visible"
+            android:id="@+id/list_view_main_friend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.andview.refreshview.XRefreshView>
+
+</LinearLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appBar_size">
+
+        <Button
+            android:id="@+id/back_action_bar_add_friends"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:layout_marginTop="@dimen/activity_edge"
+            android:background="@drawable/back_btn"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/appBar_size"
+            android:background="@color/Blue_09c"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="查询校友录"
+                android:textColor="@color/white_text_100"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:layout_marginTop="@dimen/activity_edge"
+            android:background="@drawable/search_btn"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/bar"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue_09c"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/search_odd"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginLeft="@dimen/activity_edge"
+            android:layout_marginRight="@dimen/activity_edge"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/radio_group_three_odds"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_weight="3.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/search_by_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="姓名"
+                    android:textColor="@color/text_btn_bw_t"
+                    android:textSize="@dimen/small_title_text" />
+
+                <RadioButton
+                    android:id="@+id/search_by_stu_id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/card_margin"
+                    android:layout_marginRight="@dimen/card_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bg_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="姓氏"
+                    android:textColor="@color/text_btn_bw_t"
+                    android:textSize="@dimen/small_title_text" />
+
+                <RadioButton
+                    android:id="@+id/search_by_stu_last_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1.3"
+                    android:background="@drawable/edit_text_bg_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="关键字"
+                    android:textColor="@color/text_btn_bw_t"
+                    android:textSize="@dimen/small_title_text" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/admin_class_odd_search_fuzzy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/edit_text_bg_focus"
+                android:gravity="center"
+                android:text="全年级"
+                android:textColor="@color/Orange_f60"
+                android:textSize="@dimen/small_title_text" />
+
+            <Switch
+                android:id="@+id/switch_btn"
+                android:layout_width="52dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="46dp"
+                android:background="@drawable/edit_text_stroke"
+                android:clickable="true"
+                android:hint="请输入姓名"
+                android:inputType="text"
+                android:maxLength="4"
+                android:paddingLeft="@dimen/card_margin"
+                android:textColor="@color/white_text_100"
+                android:textSize="@dimen/small_title_text"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/search_et_last_name"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="46dp"
+                android:background="@drawable/edit_text_stroke"
+                android:clickable="true"
+                android:hint="请输入姓氏"
+                android:inputType="text"
+                android:maxLength="4"
+                android:paddingLeft="@dimen/card_margin"
+                android:textColor="@color/white_text_100"
+                android:textSize="@dimen/small_title_text"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/search_et_key_word"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="46dp"
+                android:background="@drawable/edit_text_stroke"
+                android:clickable="true"
+                android:hint="1个关键字"
+                android:inputType="text"
+                android:maxLength="4"
+                android:paddingLeft="@dimen/card_margin"
+                android:textColor="@color/white_text_100"
+                android:textSize="@dimen/small_title_text"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/totle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="108dp"
+                android:gravity="center"
+                android:textColor="@color/white_text_100"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/totle_man"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="180dp"
+                android:gravity="center"
+                android:textColor="@color/white_text_100"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/totle_woman"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="246dp"
+                android:gravity="center"
+                android:textColor="@color/white_text_100"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_dividers_12"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/search_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_dividers_12" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_below="@id/top"
+        android:background="@color/white_dividers_12"
+        android:id="@+id/show_grid"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+
+        <GridView
+            android:background="@drawable/bg_grid"
+            android:id="@+id/init_grid_data"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:gravity="center"
+            android:numColumns="4" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/history_null"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:textColor="@color/black_hint_text_26"
+            android:text="历史记录为空"/>
+        <RelativeLayout
+            android:id="@+id/line_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/init_grid_data">
+
+            <TextView
+                android:clickable="true"
+                android:id="@+id/clear_history"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/Orange_f60"
+                android:text="清除历史记录"
+                android:textSize="14sp" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cancel_history_btn_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:clickable="true"/>
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Blue_09c"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

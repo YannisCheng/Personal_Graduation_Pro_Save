@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/Blue_09c"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:alpha="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="山东省淄博第五中学"
+            android:textColor="#fff"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="28sp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="校友录"
+            android:textColor="#fff"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="28sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="高49级    2009.9 — 2012.6"
+            android:textColor="#fff"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="18sp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="52dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="getEvent"
+                android:visibility="invisible"
+                android:id="@+id/cancel_btn_edit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/edit_cancel_btn_back"
+                />
+
+            <EditText
+                android:paddingLeft="@dimen/card_margin"
+                android:paddingRight="@dimen/card_margin"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:maxLength="18"
+                android:inputType="number"
+                android:textColor="@color/black_text_87"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:hint="输入身份证号"
+                android:id="@+id/input_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_bg_shork"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/login_ok"
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:background="@drawable/login_send"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/checkbox_layout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text=" 记住信息"
+                android:textSize="14sp"
+                android:textColor="@color/white_secondary_text_70"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/checkBoxRem"
+                android:checked="false" />
+            <CheckBox
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text=" 自动登录"
+                android:layout_marginRight="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/white_secondary_text_70"
+                android:layout_marginLeft="116dp"
+                android:id="@+id/checkBoxAuto" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="116dp"
+            android:visibility="visible"
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:text="created  by  程文佳"
+                android:textColor="#eee"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
