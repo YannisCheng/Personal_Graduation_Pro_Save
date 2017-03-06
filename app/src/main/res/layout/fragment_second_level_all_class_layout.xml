@@ -53,6 +53,17 @@
             android:textSize="14sp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/show_net_error_all_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <include layout="@layout/net_error_layout"/>
+    </LinearLayout>
+
     <com.andview.refreshview.XRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
         android:id="@+id/custom_view"

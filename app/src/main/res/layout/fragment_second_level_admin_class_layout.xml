@@ -109,6 +109,17 @@
             android:layout_height="match_parent"/>
     </com.andview.refreshview.XRefreshView>
 
+    <LinearLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/show_net_error_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <include layout="@layout/net_error_layout"/>
+    </LinearLayout>
+
     <!-- 暂时关闭-->
     <LinearLayout
         android:visibility="visible"

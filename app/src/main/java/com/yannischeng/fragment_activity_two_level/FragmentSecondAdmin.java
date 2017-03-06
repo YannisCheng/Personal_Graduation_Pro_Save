@@ -58,6 +58,7 @@ public class FragmentSecondAdmin extends Fragment {
     private int pageCount = 0;
     private int positoinItem = 0;
     private HttpRequestClass requestClass;
+    private LinearLayout linearLayout;
 
     //3个布局
     private LinearLayout showSingleClass, showAllClass;
@@ -86,7 +87,7 @@ public class FragmentSecondAdmin extends Fragment {
     }
 
     private void initView() {
-
+        linearLayout = (LinearLayout) rootView.findViewById(R.id.show_net_error_admin);
         showSingleClass = (LinearLayout) rootView.findViewById(R.id.single_class_show_layout);
         showListView = (ListView) rootView.findViewById(R.id.list_view_admin_class);
         showAllClass = (LinearLayout) rootView.findViewById(R.id.class_show_layout);
@@ -125,6 +126,11 @@ public class FragmentSecondAdmin extends Fragment {
             public void handleMessage(Message msg) {
                 switch (msg.what) {
                     case 1:
+                        showNumber.setVisibility(View.VISIBLE);
+                        showMNum.setVisibility(View.VISIBLE);
+                        showWNum.setVisibility(View.VISIBLE);
+                        refreshView.setVisibility(View.VISIBLE);
+                        linearLayout.setVisibility(View.GONE);
                         MulObjPlus mo = (MulObjPlus) msg.obj;
                         pageCount = Integer.parseInt(mo.getWomanCount());
                         showNumber.setText("共:" + mo.getManCount() + "人");
@@ -150,7 +156,19 @@ public class FragmentSecondAdmin extends Fragment {
                         break;
                     case 4:
                         //处理超时
-                        refreshView.stopRefresh();
+                        if (1 == preferences.getInt(isInitDBOK, 0)) {
+                            Log.e(TAG, "initView: 数据已经本地化，使用本地数据库");
+                            queryLocalDB(classID, pageSize2);
+                        } else {
+
+                            showNumber.setVisibility(View.INVISIBLE);
+                            showMNum.setVisibility(View.INVISIBLE);
+                            showWNum.setVisibility(View.INVISIBLE);
+                            Log.e(TAG, "initView: 数据未进行本地化");
+                            refreshView.setVisibility(View.GONE);
+                            linearLayout.setVisibility(View.VISIBLE);
+                            refreshView.stopRefresh();
+                        }
                         break;
                     case 5:
                         Toast.makeText(getActivity(), "与服务器连接异常，无法添加好友！", Toast.LENGTH_SHORT).show();
@@ -180,6 +198,13 @@ public class FragmentSecondAdmin extends Fragment {
     }
 
     private void itemClick() {
+
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                doHttp(pageSize2);
+            }
+        });
         //点击查看学生详情
         showListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -478,6 +503,7 @@ public class FragmentSecondAdmin extends Fragment {
                 showAllClass.setVisibility(View.VISIBLE);
                 showSingleClass.setVisibility(View.GONE);
                 refreshView.setVisibility(View.GONE);
+                linearLayout.setVisibility(View.GONE);
                 MyApplication.GETCLASSID = "";
                 if (lists == null) {
                 } else {

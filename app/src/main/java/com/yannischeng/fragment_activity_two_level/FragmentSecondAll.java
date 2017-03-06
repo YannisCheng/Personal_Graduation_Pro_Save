@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -69,6 +70,7 @@ public class FragmentSecondAll extends Fragment {
     private String[] strs = null;
     private boolean isOpen = true;
     private RelativeLayout relativeLayout;
+    private LinearLayout linearLayout,topLayout;
 
     @Nullable
     @Override
@@ -86,8 +88,9 @@ public class FragmentSecondAll extends Fragment {
     }
 
     private void initView() {
+        linearLayout = (LinearLayout) rootView.findViewById(R.id.show_net_error_all_class);
+        topLayout = (LinearLayout) rootView.findViewById(R.id.top);
         useDBHelper = new UseDBHelper(getContext());
-
         showListView = (ListView) rootView.findViewById(R.id.all_class_list_view);
         refreshView = (XRefreshView) rootView.findViewById(R.id.custom_view);
         totle = (TextView) rootView.findViewById(R.id.totle_all);
@@ -273,6 +276,13 @@ public class FragmentSecondAll extends Fragment {
                 return true;
             }
         });
+
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                doHttp(1);
+            }
+        });
     }
 
     //UI数据更新
@@ -282,6 +292,9 @@ public class FragmentSecondAll extends Fragment {
             public void handleMessage(Message msg) {
                 switch (msg.what) {
                     case 11:
+                        topLayout.setVisibility(View.VISIBLE);
+                        refreshView.setVisibility(View.VISIBLE);
+                        linearLayout.setVisibility(View.GONE);
                         MulObjPlus mo = (MulObjPlus) msg.obj;
                         totle.setText("共计:" + mo.getManCount() + "人");
                         totleM.setText("男:" + mo.getManCAll() + "人");
@@ -314,7 +327,16 @@ public class FragmentSecondAll extends Fragment {
                         break;
                     case 44:
                         //处理超时
-                        refreshView.stopRefresh();
+                        if (1 == preferences.getInt(isInitDBOK, 0)) {
+                            Log.e(TAG, "initView: 数据已经本地化，使用本地数据库");
+                            queryLocalDB(pageSize);
+                        } else {
+                            Log.e(TAG, "initView: 数据未进行本地化");
+                            topLayout.setVisibility(View.GONE);
+                            refreshView.setVisibility(View.GONE);
+                            linearLayout.setVisibility(View.VISIBLE);
+                            refreshView.stopRefresh();
+                        }
                         break;
                 }
 
