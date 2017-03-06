@@ -228,6 +228,14 @@ public class FragmentMain extends Fragment {
                 startActivity(intent);
             }
         });
+
+        showNULL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                doHttp();
+            }
+        });
+
         showListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {

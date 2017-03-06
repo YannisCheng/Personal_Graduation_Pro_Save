@@ -17,6 +17,7 @@
         <include layout="@layout/net_error_layout"/>
     </LinearLayout>
     <TextView
+        android:clickable="true"
         android:background="@color/white_text_100"
         android:visibility="gone"
         android:id="@+id/show_null"

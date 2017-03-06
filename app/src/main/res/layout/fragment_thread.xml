@@ -156,48 +156,7 @@
                     android:layout_height="24dp"
                     android:background="@drawable/send_btn_back"
                     />
-
             </LinearLayout>
-
-
-
-            <LinearLayout
-                android:layout_marginTop="@dimen/activity_edge"
-                android:id="@+id/about_me"
-                android:background="@drawable/bg_my_fragment_selector"
-                android:clickable="true"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/navigation_bottom"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_marginLeft="4dp"
-                    android:layout_width="@dimen/navigation_bottom"
-                    android:layout_height="@dimen/navigation_bottom"
-                    android:gravity="center">
-                    <ImageView
-                        android:src="@mipmap/connect"
-                        android:layout_width="@dimen/statue_bar"
-                        android:layout_height="@dimen/statue_bar" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical">
-                    <TextView
-                        android:textSize="@dimen/small_title_text"
-                        android:textColor="@color/black_text_87"
-                        android:text="开发者"
-                        android:layout_gravity="center_vertical"
-                        android:gravity="center_vertical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="32dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-
-
-
-
             <RelativeLayout
                 android:layout_marginTop="@dimen/activity_edge"
                 android:visibility="gone"
@@ -232,7 +191,38 @@
                     />
             </RelativeLayout>
 
-
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_edge"
+                android:id="@+id/about_me"
+                android:background="@drawable/bg_my_fragment_selector"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/navigation_bottom"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="@dimen/navigation_bottom"
+                    android:layout_height="@dimen/navigation_bottom"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@mipmap/connect"
+                        android:layout_width="@dimen/statue_bar"
+                        android:layout_height="@dimen/statue_bar" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:textSize="@dimen/small_title_text"
+                        android:textColor="@color/black_text_87"
+                        android:text="开发者"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp" />
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/exit"

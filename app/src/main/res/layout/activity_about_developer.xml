@@ -6,7 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/tool_action_bar_user_detail_layout"/>
-
+    <LinearLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/show_net_error_developer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/net_error_layout"/>
+    </LinearLayout>
     <ProgressBar
         style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
         android:max="100"
