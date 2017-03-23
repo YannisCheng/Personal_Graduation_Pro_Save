@@ -15,10 +15,10 @@
         <TextView
             android:layout_marginTop="40dp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="114dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="山东省淄博第五中学"
+            android:text="基于Android设备的\n淄博五中校友交流软件的\n设计与实现"
             android:textColor="#fff"
             android:gravity="center_vertical|center_horizontal"
             android:textSize="28sp"
@@ -26,6 +26,7 @@
             />
 
         <TextView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="16dp"
@@ -82,7 +83,7 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginLeft="16dp"
                 android:maxLength="18"
-                android:inputType="number"
+                android:inputType="text"
                 android:textColor="@color/black_text_87"
                 android:textSize="18sp"
                 android:gravity="center"
@@ -136,7 +137,7 @@
 
 
         <LinearLayout
-            android:layout_marginTop="116dp"
+            android:layout_marginTop="156dp"
             android:visibility="visible"
             android:id="@+id/author"
             android:layout_width="match_parent"

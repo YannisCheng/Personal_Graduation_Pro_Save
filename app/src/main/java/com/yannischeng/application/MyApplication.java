@@ -66,7 +66,7 @@ public class MyApplication extends Application {
     public static OfficialStudentInfo studentInfo = null;
 
     //ip地址
-    public static String LOCALHOST = "192.168.7.122";
+    public static String LOCALHOST = "192.168.42.31";
 
     public static Handler handler = null;
     public static Message message = null;

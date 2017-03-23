@@ -28,6 +28,7 @@ import org.xutils.x;
 
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
+import java.util.regex.Pattern;
 
 
 /**
@@ -86,9 +87,15 @@ public class LoginActivity extends AppCompatActivity {
                 } else {
                     cancelBtn.setVisibility(View.GONE);
                 }
+
                 if ((s.toString().length() < 18)) {
                     loginBtn.setVisibility(View.GONE);
                     idCardET.setError("还差" + (18 - (s.toString().length())) + "位");
+                    Pattern pattern = Pattern.compile("[0-9]*");
+                    if(pattern.matcher(s.toString()).matches()){
+                    } else {
+                        idCardET.setError("还差" + (18 - (s.toString().length())) + "位,前17位只能为数字");
+                    }
                 } else {
                     loginBtn.setVisibility(View.VISIBLE);
                 }
