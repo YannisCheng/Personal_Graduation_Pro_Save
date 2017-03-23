@@ -18,7 +18,7 @@
             android:layout_height="114dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="基于Android设备的\n淄博五中校友交流软件的\n设计与实现"
+            android:text="淄博五中校友交流软件"
             android:textColor="#fff"
             android:gravity="center_vertical|center_horizontal"
             android:textSize="28sp"
