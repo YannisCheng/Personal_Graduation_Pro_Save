@@ -10,14 +10,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.yannischeng.R;
-import com.yannischeng.bean.Talking;
+import com.yannischeng.model.Talking;
 
 import java.io.IOException;
 import java.util.List;
 
 /**
  * 发表言论适配器
- * Created by Yannis on 2016/11/25.
+ *
+ * Created by 程文佳 on 2016/11/25.
  */
 
 public class ListViewAdapterTalk extends BaseAdapter {

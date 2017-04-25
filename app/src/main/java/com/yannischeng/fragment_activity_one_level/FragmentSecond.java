@@ -31,9 +31,9 @@ import java.util.List;
 
 
 /**
- * 同学录UI
- * <p>
- * Created by YannisCheng
+ * 同学录:按班级,全年级
+ *
+ * Created by 程文佳
  */
 public class FragmentSecond extends Fragment {
     private static final String TAG = "--FragmentSecond--";

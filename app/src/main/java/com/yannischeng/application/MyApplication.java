@@ -11,13 +11,15 @@ import android.net.NetworkInfo;
 import android.os.Handler;
 import android.os.Message;
 
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.OfficialStudentInfo;
 import com.yannischeng.db.UseDBHelper;
 import com.yannischeng.util.UtilTools;
 
 import org.xutils.x;
 
 /**
+ * 重写Application
+ *
  * Created by 程文佳 on 2016/11/1.
  */
 

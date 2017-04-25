@@ -11,7 +11,12 @@ import static com.yannischeng.application.MyApplication.FIRSTUSE;
 import static com.yannischeng.application.MyApplication.editor;
 import static com.yannischeng.application.MyApplication.preferences;
 
-
+/**
+ *
+ * 闪屏界面
+ *
+ * Created by 程文佳
+ */
 public class SplashActivity extends AppCompatActivity {
 
     @Override

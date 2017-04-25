@@ -18,7 +18,9 @@ import java.util.List;
 
 
 /**
- * Created by YannisCheng
+ * 引导界面
+ *
+ * Created by 程文佳
  */
 public class GuideActivity extends AppCompatActivity {
     private List<Fragment> fragmentList;

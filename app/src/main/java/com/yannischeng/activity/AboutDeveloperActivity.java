@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import com.yannischeng.R;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.Talking;
+import com.yannischeng.model.Talking;
 import com.yannischeng.util.HttpRequestClass;
 import com.yannischeng.util.UtilTools;
 
@@ -25,7 +25,11 @@ import java.util.List;
 
 import static com.yannischeng.application.MyApplication.handler;
 
-
+/**
+ * 关于开发者
+ *
+ * Created by 程文佳
+ */
 public class AboutDeveloperActivity extends AppCompatActivity {
 
     private static final String TAG = "AboutDeveloperActivity";

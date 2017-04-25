@@ -26,8 +26,8 @@ import com.yannischeng.activity.StuInfoActivity;
 import com.yannischeng.adapter.GridViewAdapter;
 import com.yannischeng.adapter.ListViewAdapter;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.MulObjPlus;
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.MulObjPlus;
+import com.yannischeng.model.OfficialStudentInfo;
 import com.yannischeng.db.UseDBHelper;
 import com.yannischeng.util.HttpRequestClass;
 import com.yannischeng.util.MyPopupWindow;
@@ -46,7 +46,7 @@ import static com.yannischeng.application.MyApplication.useDBHelper;
  * 查看全年级学生信息
  * 添加好友
  * <p>
- * Created by YannisCheng on 2016/11/13.
+ * Created by 程文佳 on 2016/11/13.
  */
 
 public class FragmentSecondAll extends Fragment {

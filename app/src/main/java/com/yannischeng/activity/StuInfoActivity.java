@@ -21,9 +21,9 @@ import android.widget.TextView;
 import com.yannischeng.R;
 import com.yannischeng.adapter.ListViewAdapterTalk;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.CustomeInfo;
-import com.yannischeng.bean.OfficialStudentInfo;
-import com.yannischeng.bean.Talking;
+import com.yannischeng.model.CustomeInfo;
+import com.yannischeng.model.OfficialStudentInfo;
+import com.yannischeng.model.Talking;
 import com.yannischeng.util.HttpRequestClass;
 import com.yannischeng.util.RoundImageView;
 import com.yannischeng.util.UtilTools;
@@ -33,6 +33,11 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 学生个人信息中心
+ *
+ * Created by 程文佳
+ */
 public class StuInfoActivity extends AppCompatActivity {
 
     private final String TAG = "--StuInfoActivity--";
@@ -228,7 +233,7 @@ public class StuInfoActivity extends AppCompatActivity {
                         if (msg.obj == null) {
 
                         } else {
-                            CustomeInfo customeInfo = (com.yannischeng.bean.CustomeInfo) msg.obj;
+                            CustomeInfo customeInfo = (com.yannischeng.model.CustomeInfo) msg.obj;
                             addressNow.setText(customeInfo.getAddressNow() == null ? "未填写" : customeInfo.getAddressNow());
                             addressNow.setTextColor(getResources().getColor(R.color.black_text_87));
                             jobNow.setText(customeInfo.getJobNow() == null ? "未填写" : customeInfo.getJobNow());

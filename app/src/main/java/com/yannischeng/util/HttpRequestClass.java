@@ -3,11 +3,11 @@ package com.yannischeng.util;
 import android.content.Context;
 import android.util.Log;
 
-import com.yannischeng.bean.CustomeInfo;
-import com.yannischeng.bean.MulObj;
-import com.yannischeng.bean.MulObjPlus;
-import com.yannischeng.bean.OfficialStudentInfo;
-import com.yannischeng.bean.Talking;
+import com.yannischeng.model.CustomeInfo;
+import com.yannischeng.model.MulObj;
+import com.yannischeng.model.MulObjPlus;
+import com.yannischeng.model.OfficialStudentInfo;
+import com.yannischeng.model.Talking;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,6 +29,7 @@ import static com.yannischeng.application.MyApplication.useDBHelper;
 
 /**
  * http请求处理中心
+ *
  * Created by 程文佳 on 2016/11/24.
  */
 

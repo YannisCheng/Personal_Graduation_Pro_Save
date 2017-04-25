@@ -14,8 +14,8 @@ import java.util.List;
 
 /**
  * 搜索历史适配器
- * <p>
- * Created by yannischeng on 17-2-14.
+ *
+ * Created by 程文佳 on 17-2-14.
  */
 
 public class SearchGridAdapter extends BaseAdapter {

@@ -18,8 +18,8 @@ import android.widget.Toast;
 
 import com.yannischeng.R;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.CustomeInfo;
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.CustomeInfo;
+import com.yannischeng.model.OfficialStudentInfo;
 import com.yannischeng.util.HttpRequestClass;
 import com.yannischeng.util.MyPopupWindow;
 import com.yannischeng.util.SetWindowAlpha;
@@ -31,7 +31,11 @@ import org.xutils.x;
 import java.io.IOException;
 import java.io.InputStream;
 
-
+/**
+ * 用户详情
+ *
+ * Created by 程文佳
+ */
 @ContentView(R.layout.activity_user_detail)
 public class UserDetailActivity extends AppCompatActivity {
 

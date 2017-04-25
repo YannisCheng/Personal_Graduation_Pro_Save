@@ -7,8 +7,8 @@ import android.util.Log;
 
 /**
  * 创建本地数据库
- * <p>
- * Created by yannischeng on 2017-2-7.
+ *
+ * Created by 程文佳 on 2017-2-7.
  */
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {

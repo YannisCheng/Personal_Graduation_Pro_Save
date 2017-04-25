@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.yannischeng.R;
 import com.yannischeng.adapter.ListViewAdapterTalk;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.Talking;
+import com.yannischeng.model.Talking;
 import com.yannischeng.util.HttpRequestClass;
 import com.yannischeng.util.UtilTools;
 
@@ -22,6 +22,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * 同学留言
+ *
+ * Created by 程文佳
+ */
 public class MyTalkingActivity extends AppCompatActivity {
 
     private Button backBtn, editBtn;

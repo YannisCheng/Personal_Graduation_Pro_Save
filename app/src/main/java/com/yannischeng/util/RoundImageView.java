@@ -14,7 +14,9 @@ import android.util.Log;
 import android.widget.ImageView;
 
 /**
- * @link http://blog.csdn.net/u010156024
+ * 圆形头像
+ *
+ * http://blog.csdn.net/u010156024
  */
 public class RoundImageView extends ImageView {
     private Paint mpaint;

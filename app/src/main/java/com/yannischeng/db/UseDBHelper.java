@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.OfficialStudentInfo;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,8 +34,8 @@ import static com.yannischeng.db.MyDatabaseHelper.WEIGHT;
 
 /**
  * 执行数据库的查询
- * <p>
- * Created by YannisCheng on 17-2-7.
+ *
+ * Created by 程文佳 on 17-2-7.
  */
 
 public class UseDBHelper {

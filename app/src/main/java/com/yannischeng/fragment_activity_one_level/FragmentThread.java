@@ -50,7 +50,7 @@ import static com.yannischeng.application.MyApplication.useDBHelper;
 
 /**
  * 我
- * Created by YannisCheng
+ * Created by 程文佳
  */
 
 public class FragmentThread extends Fragment {

@@ -28,8 +28,8 @@ import com.yannischeng.R;
 import com.yannischeng.adapter.ListViewAdapter;
 import com.yannischeng.adapter.SearchGridAdapter;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.MulObj;
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.MulObj;
+import com.yannischeng.model.OfficialStudentInfo;
 import com.yannischeng.util.HttpRequestClass;
 import com.yannischeng.util.MyPopupWindow;
 import com.yannischeng.util.SetWindowAlpha;
@@ -45,8 +45,11 @@ import java.util.List;
 import static com.yannischeng.application.MyApplication.isInitDBOK;
 import static com.yannischeng.application.MyApplication.preferences;
 import static com.yannischeng.application.MyApplication.useDBHelper;
-
-
+/**
+ * 搜索界面
+ *
+ * Created by 程文佳
+ */
 @ContentView(R.layout.activity_search_view_pager_layout)
 public class SearchActivity extends AppCompatActivity {
 

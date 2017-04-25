@@ -9,7 +9,7 @@ import android.widget.RadioGroup;
 import com.yannischeng.R;
 import com.yannischeng.adapter.ViewPagerManager;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.OfficialStudentInfo;
 import com.yannischeng.fragment_activity_one_level.FragmentMain;
 import com.yannischeng.fragment_activity_one_level.FragmentSecond;
 import com.yannischeng.fragment_activity_one_level.FragmentThread;
@@ -23,7 +23,11 @@ import java.util.List;
 
 import static com.yannischeng.application.MyApplication.studentInfo;
 
-
+/**
+ * 主界面
+ *
+ * Created by 程文佳
+ */
 //代替 setContentView(R.layout.activity_main);
 @ContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {

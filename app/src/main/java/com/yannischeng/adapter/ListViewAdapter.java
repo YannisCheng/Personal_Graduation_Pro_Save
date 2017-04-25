@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.yannischeng.R;
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.OfficialStudentInfo;
 
 import java.io.IOException;
 import java.util.List;

@@ -16,7 +16,9 @@ import com.yannischeng.R;
 import com.yannischeng.adapter.ListViewAdapterPopup;
 
 /**
- * Created by Administrator on 2016/11/8.
+ * 我的popupWindow
+ *
+ * Created by 程文佳 on 2016/11/8.
  */
 
 public class MyPopupWindow {

@@ -10,7 +10,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by Yannis
+ * 小的工具类
+ *
+ * Created by 程文佳
  */
 public class UtilTools {
 

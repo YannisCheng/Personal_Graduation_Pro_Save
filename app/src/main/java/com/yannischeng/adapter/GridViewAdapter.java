@@ -12,7 +12,8 @@ import com.yannischeng.R;
 
 /**
  * GridView 设配器
- * Created by yannischeng on 2016/12/3.
+ *
+ * Created by 程文佳 on 2016/12/3.
  */
 
 public class GridViewAdapter extends BaseAdapter {

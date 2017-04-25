@@ -27,7 +27,7 @@ import com.yannischeng.activity.StuInfoActivity;
 import com.yannischeng.activity.UserDetailActivity;
 import com.yannischeng.adapter.ListViewAdapter;
 import com.yannischeng.application.MyApplication;
-import com.yannischeng.bean.OfficialStudentInfo;
+import com.yannischeng.model.OfficialStudentInfo;
 import com.yannischeng.util.HttpRequestClass;
 import com.yannischeng.util.MyPopupWindow;
 import com.yannischeng.util.RoundImageView;
@@ -41,7 +41,7 @@ import java.util.List;
 
 /**
  * 关注
- * Created by YannisCheng
+ * Created by 程文佳
  */
 public class FragmentMain extends Fragment {
 

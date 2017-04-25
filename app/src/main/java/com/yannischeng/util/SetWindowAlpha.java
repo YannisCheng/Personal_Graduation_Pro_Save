@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.view.WindowManager;
 
 /**
- * Created by yannischeng on 2016/12/2.
+ * 设置背景透明度
+ *
+ * Created by 程文佳 on 2016/12/2.
  */
 
 public class SetWindowAlpha {
