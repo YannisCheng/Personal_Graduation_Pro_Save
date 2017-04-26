@@ -97,10 +97,12 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     /**
+     *
      * if 数据 == null
      * relativeLayout gone
      * else
      * relativeLayout visibility
+     *
      */
     //执行“搜索”按钮
     private void searchListener() {
