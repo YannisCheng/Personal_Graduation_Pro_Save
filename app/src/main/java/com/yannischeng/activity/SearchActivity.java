@@ -97,6 +97,10 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     /**
+     * func02
+     */
+
+    /**
      *
      * if 数据 == null
      * relativeLayout gone
