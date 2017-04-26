@@ -45,9 +45,10 @@ import java.util.List;
 import static com.yannischeng.application.MyApplication.isInitDBOK;
 import static com.yannischeng.application.MyApplication.preferences;
 import static com.yannischeng.application.MyApplication.useDBHelper;
+
 /**
  * 搜索界面
- *
+ * <p>
  * Created by 程文佳
  */
 @ContentView(R.layout.activity_search_view_pager_layout)
@@ -112,7 +113,6 @@ public class SearchActivity extends AppCompatActivity {
                 if (inputET.getText().toString().equals("") && lastET.getText().toString().equals("") && keyWordET.getText().toString().equals("")) {
                     new UtilTools().useToast(SearchActivity.this, "输入内容不能为空！");
                 } else {
-
                     if (inputET.getText().toString().equals("")) {
                         if (lastET.getText().toString().equals("")) {
                             if (keyWordET.getText().toString().equals("")) {
@@ -262,12 +262,14 @@ public class SearchActivity extends AppCompatActivity {
         if (studentInfoList == null) {
             new UtilTools().useToast(SearchActivity.this, "与服务器连接异常");
         } else if (studentInfoList == null || studentInfoList.size() == 0) {
+            setToVisible();
             new UtilTools().useToast(SearchActivity.this, "查询内容为空！");
             showListView.setVisibility(View.GONE);
             showTtotle.setText("共:" + 0 + "人");
             showMan.setText("男:" + 0 + "人");
             showWoman.setText("女:" + 0 + "人");
         } else {
+            setToVisible();
             showTtotle.setText("共:" + ints[0] + "人");
             showMan.setText("男:" + ints[1] + "人");
             showWoman.setText("女:" + ints[2] + "人");
@@ -305,11 +307,13 @@ public class SearchActivity extends AppCompatActivity {
                             new UtilTools().useToast(SearchActivity.this, "与服务器连接异常");
                         } else if (mo.getList() == null || mo.getList().size() == 0) {
                             new UtilTools().useToast(SearchActivity.this, "查询内容为空！");
+                            setToVisible();
                             showListView.setVisibility(View.GONE);
                             showTtotle.setText("共:" + 0 + "人");
                             showMan.setText("男:" + 0 + "人");
                             showWoman.setText("女:" + 0 + "人");
                         } else {
+                            setToVisible();
                             showTtotle.setText("共:" + mo.getList().size() + "人");
                             showMan.setText("男:" + mo.getManCount() + "人");
                             showWoman.setText("女:" + mo.getWomanCount() + "人");
@@ -500,11 +504,9 @@ public class SearchActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 relativeLayout.setVisibility(View.GONE);
                 showListView.setVisibility(View.GONE);
-                showTtotle.setText("共:" + 0 + "人");
-                showMan.setText("男:" + 0 + "人");
-                showWoman.setText("女:" + 0 + "人");
                 switch (checkedId) {
                     case R.id.search_by_stu_last_name:
+                        setToNull();
                         //使用InputFilter 进行过滤,字符最大长度为1
                         keyWordET.setVisibility(View.VISIBLE);
                         keyWordET.setFocusable(true);
@@ -515,6 +517,7 @@ public class SearchActivity extends AppCompatActivity {
                         inputET.setText("");
                         break;
                     case R.id.search_by_name:
+                        setToNull();
                         inputET.setVisibility(View.VISIBLE);
                         inputET.setFocusable(true);
                         inputET.setFilters(new InputFilter[]{new InputFilter.LengthFilter(4)});
@@ -524,6 +527,7 @@ public class SearchActivity extends AppCompatActivity {
                         keyWordET.setText("");
                         break;
                     case R.id.search_by_stu_id:
+                        setToNull();
                         lastET.setVisibility(View.VISIBLE);
                         lastET.setFocusable(true);
                         lastET.setFilters(new InputFilter[]{new InputFilter.LengthFilter(1)});
@@ -592,6 +596,18 @@ public class SearchActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void setToNull() {
+        showTtotle.setVisibility(View.INVISIBLE);
+        showMan.setVisibility(View.INVISIBLE);
+        showWoman.setVisibility(View.INVISIBLE);
+    }
+
+    private void setToVisible() {
+        showTtotle.setVisibility(View.VISIBLE);
+        showMan.setVisibility(View.VISIBLE);
+        showWoman.setVisibility(View.VISIBLE);
     }
 
     private void doGridAdapter(final List<String> lists, String tag) {
